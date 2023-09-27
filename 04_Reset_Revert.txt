@@ -1,0 +1,10 @@
+Reset: reset the local branch to a prev state (move the head of the log to prev commit)
+       if the changes are pushed to remote then i would not be able to push it because the history is different
+       Reset is for changes that i have made locally
+ 
+            git reset HEAD~N: reset the head to prev n commits (undu N times) but the working files will stay as it is
+            git checkout <commit id> -- file: set the code of the file in working phase as was in that commit
+
+Revert: is used to revert changes that i have push to remote repo
+
+        git revert <commit id that want to undo>: revert will place a new commit to bring the state as it was before the commit i want to undo

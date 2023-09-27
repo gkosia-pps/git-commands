@@ -1,0 +1,49 @@
+Squash is the process that we are maintaining the changes of the commits but compressing the commit messages to one
+
+    1. git rebase -i HEAD~<n>: n is the number of commits 
+       OR
+       git rebase -i <after-this-commit-sha1>: sha1 is the code of commit, from this commit until current commit
+
+    2. Edit the rebase 
+
+        amend: Commit the staged changes as part of the last commit without edit the message
+               Commit changes without write a new commit in the history (append the changes to last commit)
+
+                git commit --amend --no-edit
+
+        reward:
+
+                git rebase -i HEAD~2: edit the last 2 commits
+                add r in the commit i want to modify (i want to operate on this commit)
+                change the commit message
+
+        delete:
+                
+                git rebase -i HEAD~2: edit the last 2 commits
+                add d in the commit i want to drop
+
+        reorder:
+
+                git rebase -i HEAD~2: edit the last 2 commits
+                change the order of the lines 
+
+        squash:
+
+                git rebase -i HEAD~2: edit the last 2 commits
+                add f (fixup) to the commits i want to squash (apply the commit changes but ignore the messages in history)
+                    s (squash) will give the option to edit messages of squashed commits
+        
+        split:
+                
+
+
+
+Local branch behind remote:
+
+    1. git checkout main:           switch to local main branch
+    2. git pull:                    synch local main with local remote
+    3. git checkout feature_branch: switch to local feature branch 
+    4. git rebase main:             apply the commit history of main before the commits of feature_branch
+    5. git checkout main:           switch to local main branch
+    6. git rebase feature_branch:   apply the commits from feature_branch in main 
+    7. git push:                    deploy feature in main remote branch  **** deploy to prod

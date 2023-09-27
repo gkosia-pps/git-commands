@@ -15,6 +15,10 @@
 
     git checkout -b test-repo
 
+*** Delete a local branch 
+
+    git branch -d test-repo
+
 *** To check if any files have been changed since last commit:
 
     git status
@@ -40,6 +44,22 @@
 
     git fetch: shows the changes without applying them
 
+*** To synch from remote main:
+
+    git merge origin/main
+
 *** To bring the changes from remote repo:
 
     git merge origin/main
+
+*** Merge from remote repo
+
+    git pull -b <branch>: pull = fetch + merge
+
+*** Link a local repo with a remote repo
+
+    git remote add origin <remote link>
+
+*** Compare the workiing files with the repo
+
+    git diff
