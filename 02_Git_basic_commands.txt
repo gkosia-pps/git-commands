@@ -1,0 +1,45 @@
+*** Create a local repo:
+
+    1. Move to the folder
+    2. git init
+
+*** Clone a remote repo:
+
+    git clone <repo link>
+
+*** To view the branches of local repo:
+    
+    git branch
+
+*** To create a new local branch and move to it(if repo already exists git will switch to it):
+
+    git checkout -b test-repo
+
+*** To check if any files have been changed since last commit:
+
+    git status
+
+*** To add chenged files in stage:
+
+    git add <filename or path expression>: stage specific files
+    git add --all: stage all changes
+
+*** To commit changes:
+
+    git commit -m"message"
+
+*** To push changes to remote:
+
+    git push
+
+*** To see the commit history of the repo:
+
+    git log
+
+*** To check if there is any changes in the remote repo:
+
+    git fetch: shows the changes without applying them
+
+*** To bring the changes from remote repo:
+
+    git merge origin/main
