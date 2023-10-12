@@ -1,0 +1,7 @@
+.gitignore operate on files that didnt captured yet from repo.
+
+If we want to ignore existing files in the report after update the .gitignore:
+
+    git rm -r --cached .
+    git add .
+    git commit -m "untrack files contained in the .gitignore file"
