@@ -63,3 +63,7 @@
 *** Compare the workiing files with the repo
 
     git diff
+	
+*** Push a local branch to remote server
+	
+	git push -u origin <branch>
