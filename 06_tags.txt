@@ -1,0 +1,25 @@
+https://www.youtube.com/watch?v=govmXpDGLpo
+
+Tags are used to store a spevific version of repo without merge it to main (without release it)
+The idea is to store a version in order to have a reference to it 
+
+1. git checkout <repo>
+2. git tag <tag name>: simple tag
+OR 
+git tag -a v1.0 -m "the message of tag": Annotated tag
+3. git show v1.0: to see details about the tag
+4. git push origin v1.0
+
+To delete tag:
+    git tag -d v1.0: delete tag
+    git push origin -d v1.0: delete tag from remote
+
+
+Checkout from a tag:
+
+    git checkout -b <branchname> <tagname>
+
+Create tag from old commit:
+
+    git tag v1.3 <commit id>
+    git push --tags

@@ -1,0 +1,22 @@
+Semantic versioning:
+    
+    major.minor.patch
+
+    major: if major number increases means that the change is incompatiple with older versions
+           foundational changes
+
+           releasing 2.0.0 means is not compatiple with 1.0.0
+
+    minor: adding functionality
+           is backwotk compatiple
+
+           releasing 0.2.0 is compatible with 0.1.0 (is not completly different)
+
+    patch: fix a bag or release something that is not fully production ready
+
+
+
+Release: its everything that i need as of that time for the project (code, assets, configurations)
+
+    1. Create a new release
+    2. Create a tag and a branch
