@@ -17,7 +17,7 @@
 
 *** Delete a local branch 
 
-    git branch -d test-repo
+    git branch -D test-repo
 
 *** To check if any files have been changed since last commit:
 
